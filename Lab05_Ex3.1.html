@@ -66,12 +66,53 @@
       font-size: 1rem;
       margin: 0;
     }
+
+    .pdf-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 24px;
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .pdf-container iframe {
+      display: block;
+      width: 100%;
+      height: 700px;
+      border: 0;
+    }
+
+    .personal-info {
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+
+    .personal-name {
+      font-size: 20px;
+    }
+
+    .student-id {
+      font-size: 20px;
+    }
+
+    .class-name {
+      font-size: 20px;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <h1>LỢI ÍCH CỦA CÔNG NGHỆ SỐ</h1>
+
+    <p class="personal-info">THÔNG TIN CÁ NHÂN</p>
+    <p class="personal-name"><strong>Tên:</strong> Ngô Minh Quốc</p>
+    <p class="student-id"><strong>MSSV:</strong> B2605459</p>
+    <p class="class-name"><strong>Lớp:</strong> DI26D2A2</p>
 
     <p class="description">
       Một số ứng dụng của công nghệ số được thể hiện bằng Infographic và video trực quan.
@@ -92,9 +133,14 @@
       </iframe>
     </div>
 
+    <div class="pdf-container">
+      <iframe src="Lab05_Ex1.2.pdf" title="Lab05_Ex1.2 PDF"></iframe>
+    </div>
+
     <p class="credit">
       “Infographic tạo bởi Canva AI, hình ảnh từ Unsplash (Unsplash license).
-      Video tạo bởi CapCut, tài liệu từ Pexels/FreeSound (CC0)/Vbee AI voice.”
+      Video tạo bởi CapCut, tài liệu từ Pexels/FreeSound (CC0)/Vbee AI voice.
+      File PDF được tham khảo từ Gemini, hình ảnh trong file từ Unsplash (Unsplash license).”
     </p>
   </div>
 </body>
